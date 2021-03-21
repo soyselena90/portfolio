@@ -1,0 +1,56 @@
+/*반응형*/
+
+
+/* --------------- 1440px이하 ------------------ */
+@media (max-width: 1440px) {
+    .container{width: 1000px;}
+} /*--x-- 1440이하 */
+  
+  /* --------------- 1280px 이하 ------------------ */
+@media (max-width: 1280px) {   
+    .intro_text .s_back{top: 17vh;}
+    .about_wrap .a_text3 p {padding: 0px 8vw;}    
+} /*--x-- 1280이하 */  
+
+  /* --------------- 1080px 이하 ------------------ */
+@media (max-width: 1080px) {
+    .container{width: 800px;}
+    .intro_text .s_back{top: 22vh;}
+    .logo_list {width: 50%;}
+} /*--x-- 1080이하 */ 
+   
+  /* --------------- 960px 이하 ------------------ */
+@media (max-width: 960px) {
+    .container{width: 80%;}
+    .menu #nav_btn{left: 91%}
+    .start_project{display: none;}
+    #main .intro_text span {font-size: 6vw;}
+    .intro_text .s_back{top: 31vh;}
+    .about_wrap .a_text3 p {padding: 0px 10vw;}   
+} /*--x--960px이하 */
+  
+  /* --------------- 768px 이하 ------------------ */
+@media (max-width: 768px) {
+    .intro_text .s_back{top: 36vh;}  
+} /* --x-- 768px이하 */
+  
+  /* --------------- 600px 이하 ------------------ */
+@media (max-width: 600px) {
+    .about_wrap .about_text p{line-height: 2.8vw;}
+    .intro_text .s_back{top: 40vh;}
+} /*--x-- 600px이하 */
+  
+  /* --------------- 480px 이하 ------------------ */
+@media (max-width: 480px) {
+    .about_wrap .about_text p{line-height: 3vw;}
+    .intro_text .s_back{top: 42vh;}
+} 
+  /*--x-- 480px이하 */
+  
+  /* --------------- 400px 이하 ------------------ */
+@media (max-width: 360px) {
+    .intro_text .s_back{top: 45vh;}
+} 
+  /*--x-- 400px이하 */
+
+

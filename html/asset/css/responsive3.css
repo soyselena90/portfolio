@@ -1,0 +1,112 @@
+/*반응형*/
+
+
+/* --------------- 1440px이하 ------------------ */
+@media (max-width: 1440px) {
+    .container{width: 1000px;}
+    .sec1 h1{font-size: 60px;} 
+    .sec1 h1 .sp_pt{top: 52vh;}
+    .title.active .t_back {line-height: 250px;}
+    .title .t_back, .t_back .counter{font-size: 5rem;}
+} 
+  
+  /* --------------- 1280px 이하 ------------------ */
+@media (max-width: 1280px) { 
+    .sec1 h1 .sp_pt{top: 55vh;}
+    .title.active .t_back {line-height: 200px;}
+    .title .t_back, .t_back .counter{font-size: 4rem;}
+    .pro_scroll{width: 10.2vw;top: 52.5%;left: 27.8%;}
+    .title2 .skill_borderbox span{font-size: 0.95rem;}
+    .cssborder span{padding-left: 4.5vw;}
+}
+
+  /* --------------- 1080px 이하 ------------------ */
+@media (max-width: 1080px) {   
+    .container{width: 900px;}
+    #header .logo {padding: 0;flex: 1;text-align: center;}
+    #header .header_title{display: none;}
+    .sec3 .skill_text .text_right {margin-left: 0;}
+    .sec3 .skill_text .text_left {margin-left: 0;}
+    
+} 
+   
+  /* --------------- 960px 이하 ------------------ */
+@media (max-width: 960px) {
+    .container{width: 95%;} 
+    #header .start_scroll a .menu_round {width: 35px;height: 35px;margin-top: 0.8vw;}
+    .sec1 h1 {padding-left: 5%; font-size: 53px;} 
+    .sec2 .wrap02 {height: 33vw;}
+    .sec3 .skill_contents{flex-wrap: wrap;} 
+    .sec3 .skill_contents .title{margin-top: 5vw;}
+    .sec3 .skill_contents .title:nth-child(1),.sec3 .skill_contents .title:nth-child(2){        
+        margin: 0 10vw 0;
+    }
+    .title .t_back, .t_back .counter{font-size: 3rem;}
+    .title.active .t_back {line-height: 150px;}
+    .title_cont2 svg{display: none;}
+    .skill_contents2 .title2 .skill_borderbox{
+        margin: 0 auto;border-left: 1px solid #000;width: 85%;
+        justify-content: flex-start;
+    }   
+}
+  
+  /* --------------- 768px 이하 ------------------ */
+@media (max-width: 768px) {
+    .sec1 h1{font-size: 48px;}
+    .sec1 h1 .sp_pt{top: 56vh;}      
+    #section2{padding: 0;}
+    #section2 .sec2 .sec2_wrap{height: auto;}
+    .sec2 .sec2_wrap .w_text {font-size: 2vw; line-height: 3vw;}   
+    #section2 .sec2 .wrap01,
+    #section2 .sec2 .wrap03{display: block;}
+    #section2 .sec2 .wrap03{padding: 0;}
+    .sec2 .wrap01 .imgbox1,
+    .sec2 .wrap03 .imgbox3{position: static; width: 60%; margin: 0 auto;}
+    .sec2 .wrap01 .w_text,
+    .sec2 .wrap02 .imgbox2,
+    #section2 .sec2_shapes{display: none;}
+    #section2 .sec2 .wrap02{flex-direction: column;}     
+    #section2 .sec2 .textbox2{margin: 15vw 0;}
+    #section2 .sec2 .textbox3{margin: 10vw auto;} 
+    .title .t_back, .t_back .counter {font-size: 2.5rem;}
+    .title.active .t_back {line-height: 100px;}   
+   
+   } 
+  
+  /* --------------- 600px 이하 ------------------ */
+@media (max-width: 600px) {
+    .sec1 h1 em span:nth-child(1),
+    .sec1 h1 em span:nth-child(2),
+    .sec1 h1 em span:nth-child(3),
+    .sec1 h1 em span:nth-child(4),
+    .sec1 h1 em:nth-child(1) span:nth-child(5),
+    .sec1 h1 em:nth-child(1) span:nth-child(6),
+    .sec1 h1 em:nth-child(3) span:nth-child(5),
+    .sec1 h1 em:nth-child(3) span:nth-child(5)
+    {display: none; padding-left: 0;}
+    #header .log{padding-left: 1%;}    
+    .sec1 h1 .sp_pt{top: 58vh;}
+    .sec1 h1 strong {padding-left: 3%;}
+    .sec3 .skill_contents .title:nth-child(1), .sec3 .skill_contents .title:nth-child(2) {
+    margin: 0px 5vw 0;}
+    .skill_contents .title {width: 28vw;height: 35vw;}
+    .sec3 .skill_text .text_right {margin-left: -25vw;}
+    .sec3 .skill_text .text_left {margin-left: 30vw;}
+} 
+  
+  /* --------------- 480px 이하 ------------------ */
+@media (max-width: 480px) {
+    .sec1 h1{font-size: 36px;}    
+    .title .t_back, .t_back .counter {font-size: 2rem;}   
+} 
+
+  /* --------------- 400px 이하 ------------------ */
+@media (max-width: 360px) {
+    .sec1 h1{font-size: 31px;}
+    .sec1 h1 .sp_pt{width: 125%;}
+    .sec2 .sec2_wrap .w_text {font-size: 2vw;}
+    .title.active .t_back {line-height: 80px;}
+ 
+} 
+
+

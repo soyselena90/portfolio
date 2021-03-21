@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+#wrap{position: relative;}
+.container{width: 1300px; margin: 0 auto;}
+.row{}
+
+/*section*/
+section{
+    position: relative;
+}
+#main{
+    overflow: hidden;  
+}
+#about{
+    margin: 30vw 0;
+}
+#skill{
+    width: 100%;
+    height: 2000px;
+    overflow: hidden;
+}
+
+/*header*/
+
+#header{  
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 10000;
+   background: #ffffff52;
+   animation: fadeInDown 1s ease-in-out;
+}
+
+/*fixed menu*/
+
+.menu{
+    display: flex;
+    position: relative;
+    padding: 3vh 0;
+}
+.menu .nav_bttn{
+    position: fixed;
+    display: flex;
+    top: 3%;
+    left: 2%;
+    width: 3vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 101;    
+    background-color: transparent;
+    cursor: pointer;    
+    animation: fadeInDown 3s ease-in;
+}
+.nav_bttn .nav_btn_bar{
+    position: relative;
+    width: 17px;
+    height: 2px;
+    margin: 2px 0;
+    background-color: #000;
+    width: 23px;
+    margin: 3px 0;
+    transform-origin: 0 50%;    
+}
+.nav_bttn.active .nav_btn_bar{  
+    background: #FFF;
+    z-index: 101;
+}
+.nav_bttn.active span.closed1{
+    transform: translateY(0px) translateX(0) rotate(45deg) scale(1.5);
+}
+.nav_bttn.active span.closed2{     
+    transform: translateY(0px) translateX(0) rotate(-45deg) scale(1.5);
+    top: 29%;
+}
+
+/*click menu*/
+
+.overay_menu{
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s ease;
+    overflow: hidden;
+    z-index: 100;
+}
+.overay_menu.show {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+}
+.nav{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5vw;
+    letter-spacing: .2vw;
+    font-weight: 400;
+    text-align: center;
+}
+.nav ul{
+    display: inline-block;
+}
+.nav ul li{
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+.overay_menu.show li {
+    opacity: 0;
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+}
+.nav ul li a{
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 1px 3px 1px rgb(0 0 0 / 45%);
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 8vw;;
+}
+.nav.show {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+}
+
+
+/*main_menu*/
+
+.logo h1 a{
+    font-family: 'NEXON Lv1 Gothic OTF';  
+    position: relative;
+    color: #000;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.logo_list{
+    width: 25%;
+    text-align: center;
+}
+.logo_list span{
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    display: block;
+    color: #555;
+    font-size: 14px;
+    line-height: 60px;  
+}
+.start_project{
+    position: fixed;
+    right: 1.5vw;
+    top: .6vw;
+    z-index: 40;
+    width: 3%;
+    height: 100%;
+    pointer-events: none;
+}
+.start_project .start_container{
+    position: absolute;
+    top: 0;
+    right: 20%;
+    transform-origin: 100% 0;
+    transform: rotate(90deg) translateX(100%);
+}
+.start_project a{
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    white-space: nowrap;
+    pointer-events: auto;
+}
+.start_project a span{
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+.start_project a .menu_round{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--pointColor); 
+    border-radius: 50%; 
+    transition: 0.5s;
+}
+.start_project a .scroll { 
+    font-size: 0.5rem;
+    color: #ccc;
+}
+
+/*round hover*/
+.start_project a .menu_round:hover{
+    transform: scale(0.7);
+}
+
+
+
+/**********section 01**********/
+
+#main .intro_text{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+#main .intro_text h1{
+  font-family: "NEXON Lv1 Gothic OTF Light";
+}
+.intro_text .s_back{    
+  position: absolute;
+  top: 5vh;
+  left: -1vw;
+  font-size: 20vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #ff5e5e;
+  font-family: "Poppins";
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: -1;
+  transition: all 2.5s cubic-bezier(0.25, 0.1, 0.25, 1);  
+}
+
+#main .intro_text span{
+  display: block;
+  font-size: 4vw;
+  line-height: 1.3;
+  font-family: "Poppins";
+  font-weight: 200;
+  opacity: 0;
+}
+#main .intro_text .span1{
+  animation: fadeInUp 1.5s forwards ease-in-out;
+}
+#main .intro_text .span2{
+  animation: fadeInUp 1.6s forwards ease-in-out;
+}
+#main .intro_text .span3{
+  animation: fadeInUp 1.7s forwards ease-in-out;
+}
+#main .intro_text .span4{
+  animation: fadeInUp 1.8s forwards ease-in-out;
+  text-transform: uppercase; 
+}
+
+
+/**********section 02**********/
+#about .about_sec .about_wrap{
+    display: flex;  
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 37vw;
+}
+.about_wrap .about_img{
+   position: absolute;   
+   opacity: 0;
+}
+.about_wrap .about_text{
+    font-family: 'S-CoreDream-3Light';
+    font-weight: 200;
+    font-size: 1.4vw;
+    line-height: 2.3vw;
+    color: #151515; 
+    opacity: 0;
+}
+.about_text p span{
+    display: block;
+    text-align: center;
+}
+
+/*about_wrap 1*/
+.a_img1{  
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+.a_text1{
+    width: 40%;   
+}
+#about .about_wrap .a_text1 p{    
+    font-size: 1.8vw;
+    line-height: 3.5vw;
+    color: #151515;
+    padding: 0px 3vw;
+}
+.a_text1 .st1{    
+    font-weight: bold;
+    font-size: 5vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--linePoint);
+}
+#a_wrap1.active .a_text1,
+#a_wrap2.active .a_text2,
+#a_wrap3.active .a_text3
+{
+    animation: fadeInUp 1s forwards ease-in-out;    
+}
+
+#a_wrap1.active .a_img1,
+#a_wrap2.active .a_img2,
+#a_wrap3.active .a_img3
+{
+    animation: fadeInDown 1s forwards ease-in-out;    
+}
+
+/*about_wrap 2*/
+
+.a_img2{  
+    width: 35%;    
+    top: 35vw;
+}
+.a_text2{
+    width: 100%;
+    padding-right: 45vw;
+}
+
+/*about_wrap 3*/
+
+.a_img3{  
+    width: 40%;
+    left: 7.1vw;
+}
+.a_text3{
+    width: 50%;
+}
+.about_wrap .a_text3 p{
+    color: #3e3c3c;
+    padding: 0 10vw;
+    text-align: center;  
+}
+
+/*shapes*/
+
+.s_purple{   
+    position: absolute;   
+    top: 2vw;
+    right: 25vw;
+    z-index: -2;    
+}
+.purpleshape{
+    background-color: var(--color-purple);    
+    width: 5vw;
+    height: 18vw;
+}
+
+.s_red{
+    position: absolute;
+    z-index: 1;    
+    top: 28vw;
+    left: 43vw;    
+}
+.redshape{
+    width: 15vw;
+    height: 15vw;
+    background-color: var(--pointColor);
+    border-radius: 50%;
+}
+.s_orange{
+    position: absolute;
+    z-index: 2;
+    top: 55vw;
+    left: 2vw;
+}
+.orangeshape{
+    transform: rotate(133deg);
+    width: 5vw;
+    height: 17vw; 
+    background-color: var(--color-orange);   
+}
+.s_green{
+    position: absolute;
+    top: 90vw;
+    right: 25vw;
+    z-index: -1;
+}
+.greenshape{
+    transform: rotate(39deg);
+    background-color: var(--color-green);    
+    width: 5vw;
+    height: 21vw;
+}
+
+/**********section 03**********/
+#skill:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f5f6;
+    z-index: -1;
+}
+.sec3{}
+.sec3 .skill_text{
+    padding-top: 10vw;
+}
+.sec3 .skill_text .s_text{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 8px;    
+}
+.sec3 .skill_text .s_text h4{
+    text-transform: uppercase;     
+    flex-shrink: 0;
+    font-size: 170px;
+    line-height: 1;
+    font-family: Founders Grotesk;
+    color: #151515;
+}
+.sec3 .skill_text .text_right{}
+.sec3 .skill_text .text_right h4{
+    font-weight: 300;
+    margin-left: -180vw;
+}
+.sec3 .skill_text .text_left{}
+.sec3 .skill_text .text_left h4{
+    font-weight: bold;
+    margin-left: 100vw;
+    padding-top: 2vw;
+}
+

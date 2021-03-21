@@ -1,0 +1,113 @@
+/* layout */
+#contents {}
+
+#section1 {
+    height: 100vh;
+}
+
+#section2 {
+    height: 2000px;
+}
+
+#section3 {}
+
+#section4 {}
+
+#section5 {}
+
+#section6 {}
+
+/* container */
+.container {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+#header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    line-height: 80px;
+    z-index: 10000;
+}
+
+#header .logo {
+    font-family: "Poppins";
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    position: relative;
+}
+
+#header .logo::after {
+    content: "hello";
+    position: absolute;
+    left: 20%;
+    top: 0;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/* sec1 */
+.sec1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sec1 h1 {
+    font-family: "NEXON Lv1 Gothic OTF Light";
+    position: relative;
+}
+
+.sec1 h1::after {
+    content: "portfolio";
+    position: absolute;
+    bottom: -80%;
+    right: -140%;
+    font-size: 20vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ff5e5e;
+    font-family: "Poppins";
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: -1;
+}
+
+.sec1 h1 em {
+    display: block;
+    font-size: 4vw;
+    line-height: 1;
+    font-family: "Poppins";
+    font-weight: 200;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.sec1 h1 strong {
+    display: block;
+    font-size: 5vw;
+    line-height: 1;
+    font-family: "Poppins";
+    font-weight: 900;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.sec1 h1 span {
+    opacity: 0;
+    transform: translateY(50px);
+    display: inline-block;
+    min-width: 10px;
+}
+
+.sec1 .arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
