@@ -773,7 +773,7 @@ section {
     font-size: 13vw;
     line-height: 1;
     font-family: 'Playfair Display', serif;
-    font-weight: Black 900 italic;
+    font-weight: 900;
     text-transform: uppercase;
     display: block;
     transition: all 0.5s cubic-bezier(.19, 1, .22, 1);
