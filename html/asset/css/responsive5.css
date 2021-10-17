@@ -1,0 +1,206 @@
+  /* --------------- 1920px 이하 ------------------ */
+  @media (min-width: 1920px){
+    html{
+        font-size: 19px;
+    }
+ }
+ /* --------------- 1080px 이하 ------------------ */
+ @media (max-width: 1080px){
+    .title h1 .split{
+        font-size: 7rem;
+    }
+    .pro-right span{
+        font-size: 3rem;
+    }
+    .on .item-title .js-title{
+        font-size: 2.5rem;
+    }
+    .icon-box i{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+ }
+ /* --------------- 960px 이하 ------------------ */
+ @media (max-width: 960px){
+     .sec1 h1 em:first-child span:nth-child(n+1):nth-child(-n+6),
+     .sec1 h1 em:nth-child(2) span:nth-child(n+1):nth-child(-n+4),
+     .sec1 h1 em:nth-child(3) span:nth-child(n+1):nth-child(-n+5){
+         display: none;
+     }
+     .sec1 h1 strong{
+         margin-left: 0.2em;
+     }
+     .on .back span{
+         font-size: 3.5rem;
+     }
+     /* section5 */
+    #section5 .sec5 .on{
+        position: static;
+        width: 50vw;
+        height: 45vw;
+        margin: 12em auto 0;
+    }
+    .on .ani-content{
+        height: inherit;
+    }
+    .sec6 .flexbox{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .on .item-title{
+        width: 100%;
+    }
+    .on .item-title span{
+        line-height: 1;
+    }
+    .on .item-title span:first-child {
+        display: none;
+    }
+    .on .item{
+        max-width: 90%;
+    }
+    .on .item-title{
+        margin-top: 1.5em;
+        height: auto;
+    }
+    .on .item-title .js-title{
+        font-size: 2rem;
+    }
+    .item-title a{
+        padding: 0.5em 1.5em;
+    }
+    .contact-left ul{
+        padding: 2em 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+} 
+ /* --------------- 768px 이하 ------------------ */
+ @media (max-width: 768px) {
+     html{
+         font-size: 13px;
+     }
+     .header h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+     }
+     .header .header-title{
+         display: none;
+    }        
+    #section2 .sec2 .on {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: auto;
+        overflow: hidden;
+    }    
+    #section2 .on .about-left{
+        width: 80%;
+    }
+    #section2 .shapes {
+        display: none;
+    }
+    .sec2 .on .about-right{
+        margin: 3em 0;
+        width: 100%;
+    }
+    #section3{
+        padding-bottom: 30em;
+    }
+    .flip {
+        justify-content: space-around; 
+        flex-direction: column;
+    }
+    .flip .on{
+        margin-bottom: 2em;
+        width: 150px;
+    }
+    /* section4 */
+    .project-box{
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .project-box .pro-left{
+        position: static;
+        width: 65%;
+        margin: 0;
+    }
+    .project-box .pro-right{
+        width: 60%;
+    }
+    .box2 {
+        margin-top: 10em;
+    }
+    .box6 {
+        margin-bottom: 10em;
+    }   
+    /* section7  */
+    #section7{
+        padding-bottom: 20vh;
+    }
+    .sec7{
+        flex-direction: column;
+    }
+    .sec7 .contact-left,.sec7 .contact-right{
+        width: 100%;
+        max-width: 100%;
+    }
+    .sec7 .contact-left{
+        min-height: 300px;
+    }
+ } 
+ /* --------------- 600px 이하 ------------------ */
+@media (max-width: 600px) {
+    .nav-fullscreen ul li a{
+        font-size: 4rem;
+    }
+    .split{
+        font-size: 3.8rem;
+    }
+    .scr h2{
+        font-size: 5rem;
+    }
+    .to-left h2{
+        font-size: 6rem;
+    }
+    .title h1 .split{
+        font-size: 5.5rem;
+    }
+    .project-box .pro-left,
+    .project-box .pro-right{ 
+        width: 100%;
+    }
+    #section5 .sec5 .on{  
+        width: 60vw;
+        height: 55vw;
+    }    
+}   
+/* --------------- 480px 이하 ------------------ */
+@media (max-width: 480px) {   
+    .split{
+        font-size: 2.4rem;
+    }
+    .sec1 h1 strong{
+        font-size: 3.2rem;
+    }
+    .title h1 .split{
+        font-size: 3.5rem;
+    }
+    #section5 .sec5 .on{  
+        width: 75vw;
+        height: 75vw;
+    }
+    .cube h2{
+        font-size: 4rem;
+    }
+    .contact-left ul{
+        width: 100%;
+    }
+} 
+  

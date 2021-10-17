@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    
+    <!--    css    -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" async></script>
+    
+    <!--   font   -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <h1 class="page_title">Mix-or-Match</h1>
+   <div class="overlay_text visible">Click to start</div>
+   <div id="game_over_text" class="overlay_text">GAME OVER
+       <span class="overlay_text_small">Click to Restart</span>
+   </div>
+   <div id="victory_text" class="overlay_text">VICTORY
+       <span class="overlay_text_small">Click to Restart</span>
+   </div>
+   <div class="game_container">
+       <div class="game_info_container">
+           <div class="game_info">
+               Time <span id="time_remaining">100</span>
+           </div>
+           <div class="game_info">
+               Flips <span id="flips">0</span>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/balloons.png" alt="풍선" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/balloons.png" alt="풍선" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/bird.png" alt="새" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/bird.png" alt="새" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/candle.png" alt="양초" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/candle.png" alt="양초" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/favourite.png" alt="하트" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/favourite.png" alt="하트" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/hope.png" alt="희망" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/hope.png" alt="희망" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/medical-mask.png" alt="마스크" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/medical-mask.png" alt="마스크" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/origami.png" alt="학종이" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/origami.png" alt="학종이" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/proposal.png" alt="프로포즈" class="card_value">
+           </div>
+       </div>
+       <div class="card">
+           <div class="card_back card_face">
+               <img src="img/heart-card.png" alt="카드하트모양" class="cob_web">
+           </div>
+           <div class="card_front card_face">
+               <img src="img/proposal.png" alt="프로포즈" class="card_value">
+           </div>
+       </div>
+   </div>   
+</body>
+</html>
